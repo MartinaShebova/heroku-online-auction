@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bid-Click-Buy Tests</title>
+
+    <!--SystemJs-->
+    <script src="../libs/systemjs/dist/system.js"></script>
+    <script src="../public/js/systemjs-config.js"></script>
+
+    <!--Navigo-->
+    <script src="../libs/navigo/lib/navigo.js"></script>
+
+    <!--Handlebars-->
+    <script src="../libs/handlebars/dist/handlebars.js"></script>
+    <!--Mocha-->
+    <link rel="stylesheet" href="../libs/mocha/mocha.css" />
+
+    <!--Custom js-->
+    <script>
+        System.import('public/js/main.js');
+    </script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+
+    <!--testing-->
+    <!-- Testing -->
+    <script src="../libs/mocha/mocha.js"></script>
+    <script src="../libs/chai/chai.js"></script>
+    <script src="../libs/sinon/pkg/sinon.js"></script>
+    <script src="../libs/sinon-chai/lib/sinon-chai.js"></script>
+
+
+    <!-- App: Loaders -->
+    <!-- <script src="../js/data.js"></script> -->
+    <!-- <script src="../js/templates.js"></script> -->
+    <!-- <script src="../js/requester.js"></script> -->
+
+    <script>
+        mocha.setup('bdd');
+        //chai.use(sinonChai);
+    </script>
+    <script src="data-tests.js"></script>
+
+    <script>
+        mocha.run();
+    </script>
+</body>
+
+</html>

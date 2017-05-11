@@ -1,0 +1,88 @@
+<form class="well form-horizontal" method="post" id="contact-form">
+    <fieldset>
+        <!-- Form Name -->
+        <legend class="text-center font">Earn money by selling unnecessary stuff!</legend>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Title</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input class="form-control form-control-md" id="adTitle" type="text" required="required">
+                </div>
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Category</label>
+            <div class="col-md-4 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select class="form-control selectpicker" id="adCategory" required="required">
+                                <option value=" " >Select Category</option>
+                                <option>PC/Laptop/Accessories</option>
+                                <option>Phones/Accessories</option>
+                                <option >TV/Accessories</option>
+                                <option >Clothes</option>
+                                <option >Toys</option>
+                                <option >Antiques</option>
+                                <option >Books</option>
+                                <option >Tickets</option>
+                                <option >Other</option>
+                            </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Description</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-blackboard"></i></span>
+                    <textarea class="form-control" id="adDescription"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Image URL</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-camera"></i></span>
+                    <input class="form-control" id="adURL" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Start Price</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
+                    <input class="form-control" id="adStartPrice" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+                <button id="createAd" type="button" class="btn btn-info">Send <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div id="dialog-message" title="Congratulations" class="hidden">
+    <p>
+        <span class="ui-icon ui-icon-circle-check"></span>
+    </p>
+</div>

@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="cnrflash">
+                <div class="cnrflash-inner">
+                    <span class="cnrflash-label">HOT
+                            <br>
+                            OFFER</span>
+                </div>
+            </div>
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    {{this.title}}</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <img src="{{this.imageUrl}}" id="sellViewPic" class="img-responsive center-block"/>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                {{this.description}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Created at:</strong> {{formatDate this.createdAt "short"}}  {{formatTime this.createdAt "hhmm"}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Expires at:</strong> {{formatRelative this.finishedAt "hours"}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="danger">
+                                <strong>Owner:</strong> {{this.owner.email}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="success">
+                                <strong>Current Best Offer:</strong><label id="price-style"> {{this.endPrice}}$</label>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default btn-sm" id="btn-5" type="button">5 BGN</button>
+                <button class="btn btn-success btn-sm" id="btn-10" type="button">10 BGN</button>
+                <button class="btn btn-danger btn-sm" id="btn-15" type="button">15 BGN</button>
+            </div>
+        </div>
+    </div>
+</div>

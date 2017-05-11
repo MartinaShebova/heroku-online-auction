@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="/public/images/happyWoman.jpg"/>
+                </li>
+                <li>
+                    <img src="/public/images/buyGift.jpg"/>
+                </li>
+                <li>
+                    <img src="/public/images/auctionHammer.jpg"/>                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Active auctions section-->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="well well-sm text-center font color-green">
+            Explore Active Auctions
+        </div>
+    </div>
+</div>
+<div class="row match-my-cols">
+    {{#each this}}
+    <div class="col-sm-3">
+        <h4>{{this.title}}</h4>
+        <img class="img-responsive img-rounded user-pic" src="{{this.imageUrl}}" />
+        <p class="text-justify flash">Current price: {{this.endPrice}}$</p>
+        <p><a class="btn btn-info" href="#/sells/{{this._id}}" id="view-ad-details" role="button">View details &raquo;</a></p>
+    </div>
+    {{/each}}
+</div>
